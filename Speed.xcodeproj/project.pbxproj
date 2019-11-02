@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B241444A236DBD9700FC03F7 /* SpeedUnitRTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2414449236DBD9700FC03F7 /* SpeedUnitRTest.swift */; };
 		B2E6A1B8236D29F000686C34 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6A1B7236D29F000686C34 /* main.swift */; };
 		B2E6A1BF236D2A5800686C34 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6A1BE236D2A5800686C34 /* ConsoleIO.swift */; };
 		B2E6A1C1236D2A9500686C34 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6A1C0236D2A9500686C34 /* Speed.swift */; };
@@ -25,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B2414447236DBD9700FC03F7 /* SpeedUnitRTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedUnitRTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2414449236DBD9700FC03F7 /* SpeedUnitRTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedUnitRTest.swift; sourceTree = "<group>"; };
+		B241444B236DBD9700FC03F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B286B41D236DB9BA000356C7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B2E6A1B4236D29EF00686C34 /* Speed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Speed; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E6A1B7236D29F000686C34 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -33,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B2414444236DBD9700FC03F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2E6A1B1236D29EF00686C34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,11 +54,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2414448236DBD9700FC03F7 /* SpeedUnitRTest */ = {
+			isa = PBXGroup;
+			children = (
+				B2414449236DBD9700FC03F7 /* SpeedUnitRTest.swift */,
+				B241444B236DBD9700FC03F7 /* Info.plist */,
+			);
+			path = SpeedUnitRTest;
+			sourceTree = "<group>";
+		};
 		B2E6A1AB236D29EF00686C34 = {
 			isa = PBXGroup;
 			children = (
 				B286B41D236DB9BA000356C7 /* .gitignore */,
 				B2E6A1B6236D29EF00686C34 /* Speed */,
+				B2414448236DBD9700FC03F7 /* SpeedUnitRTest */,
 				B2E6A1B5236D29EF00686C34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E6A1B4236D29EF00686C34 /* Speed */,
+				B2414447236DBD9700FC03F7 /* SpeedUnitRTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +95,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B2414446236DBD9700FC03F7 /* SpeedUnitRTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B241444E236DBD9700FC03F7 /* Build configuration list for PBXNativeTarget "SpeedUnitRTest" */;
+			buildPhases = (
+				B2414443236DBD9700FC03F7 /* Sources */,
+				B2414444236DBD9700FC03F7 /* Frameworks */,
+				B2414445236DBD9700FC03F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedUnitRTest;
+			productName = SpeedUnitRTest;
+			productReference = B2414447236DBD9700FC03F7 /* SpeedUnitRTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B2E6A1B3236D29EF00686C34 /* Speed */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2E6A1BB236D29F000686C34 /* Build configuration list for PBXNativeTarget "Speed" */;
@@ -96,10 +135,13 @@
 		B2E6A1AC236D29EF00686C34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Runkai Zhang";
 				TargetAttributes = {
+					B2414446236DBD9700FC03F7 = {
+						CreatedOnToolsVersion = 11.2;
+					};
 					B2E6A1B3236D29EF00686C34 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -119,11 +161,30 @@
 			projectRoot = "";
 			targets = (
 				B2E6A1B3236D29EF00686C34 /* Speed */,
+				B2414446236DBD9700FC03F7 /* SpeedUnitRTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B2414445236DBD9700FC03F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B2414443236DBD9700FC03F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B241444A236DBD9700FC03F7 /* SpeedUnitRTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2E6A1B0236D29EF00686C34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +198,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B241444C236DBD9700FC03F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C58CLY4K2U;
+				INFOPLIST_FILE = SpeedUnitRTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.runkaizhang.SpeedUnitRTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B241444D236DBD9700FC03F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C58CLY4K2U;
+				INFOPLIST_FILE = SpeedUnitRTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.runkaizhang.SpeedUnitRTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B2E6A1B9236D29F000686C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -277,6 +374,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B241444E236DBD9700FC03F7 /* Build configuration list for PBXNativeTarget "SpeedUnitRTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B241444C236DBD9700FC03F7 /* Debug */,
+				B241444D236DBD9700FC03F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B2E6A1AF236D29EF00686C34 /* Build configuration list for PBXProject "Speed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -8,5 +8,9 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let speed = Speed()
+if CommandLine.argc < 2 {
+    speed.interactiveMode()
+} else {
+    speed.staticMode()
+}
